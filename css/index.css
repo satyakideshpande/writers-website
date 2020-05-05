@@ -1,0 +1,118 @@
+body {
+    /*background-size: cover;*/
+    background: url("../images/img1.jpg");
+    max-width:100%;
+    background-size: cover;
+    background-position:relative;
+    background-repeat: no-repeat;
+
+   
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    font-family: "Lato";
+    color: white;
+}
+
+.navbar-expand-md{
+    background: #2E4053 ;
+}
+
+.navbar-expand-md .navbar-nav{
+    color:white;
+}
+
+.navbar-inverse .navbar-brand{
+    color:white;
+}
+
+.container h1 {
+	font-weight: 700;
+	font-size: 4em;
+    color: white;
+    text-align: left;
+}
+.container .row{
+       margin-right:20%;
+}
+
+.container h3{
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    text-align: left;
+}
+
+.content{
+	padding-top: 25%;
+	text-align: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+hr{
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.colorchange{
+    animation: colorchange1 4s infinite;
+}
+@keyframes colorchange1
+{
+    0%{color:white;}
+    25%{color:gray;}
+    50%{color:white;}
+    100%{color:gray;}
+}
+
+/*Responsive Queries*/
+@media only screen and (max-width: 768px) {
+  body
+    {
+        background: url("../images/img1.jpg");
+        background-size:cover;
+        background-position: relative;
+    }
+}
+@media only screen and (max-width: 414px) {
+  body
+    {
+        background: url("../images/img2.jpg");
+        background-size:cover;
+        background-position: relative;
+    }
+
+    .container h1{
+        margin-top: 70%;
+        font-weight: 700;
+        font-size: 2em;
+    }
+
+    .container h3{
+        font-size: 1em;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+  body
+    {
+        background: url("../images/img2.jpg");
+        background-size:cover;
+        background-position: relative;
+    }
+
+    .container h1{
+        margin-top: 80%;
+        font-weight: 700;
+        font-size: 2em;
+    }
+
+    .container h3{
+        font-size: 1em;
+    }
+
+}
